@@ -11,11 +11,11 @@ navbar_entries:
 project_entries:
   - title: 서블릿 프로젝트
     url: servlet_post
-    desc: This is an example project, configured in _data/home.yml
+    desc: 넥슨 API를 활용 하여, 메이플 스토리 게임의 캐릭터 검색 및 가이드 기능 제작
 
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
+  - title: 졸업 작품 팀프로젝트
+    url: ex-post
+    desc: 음악을 감지 하여 자동으로 음악 정보, 뮤직비디오 등을 제공 및 연관 곡 자동 검색
 
 #  - title: Project 3
 #    url: overview-post
