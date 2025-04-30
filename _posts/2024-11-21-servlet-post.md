@@ -5,7 +5,10 @@ author: 김경환
 tags: [overview, Servlet]
 ---
 
-이 프로젝트는 넥슨 API를 활용하여 메이플스토리 게임의 캐릭터를 검색하고, 해당 캐릭터에 대한 다양한 정보를 제공하는 검색 및 가이드 기능을 구현한 시스템입니다.<br> 사용자는 자신의 게임 캐릭터를 쉽게 검색하여 레벨, 직업, 아이템 정보 등 다양한 정보를 확인할 수 있습니다.<br> 또한 게임 내의 컨텐츠 추천 및 가이드를 제공하여, 플레이어가 보다 효율적으로 게임을 즐길 수 있도록 도와줍니다.
+이 프로젝트는 3명이서 협업하여 진행되었으며, 저는 **넥슨 API 연동 및 기능 구현**을 담당했습니다.<br>
+메이플스토리 캐릭터 검색 및 가이드 시스템을 구현하여, 사용자가 캐릭터 정보(레벨, 직업, 아이템 등)를 쉽게 확인하고, 게임 내 컨텐츠 추천 및 가이드를 받을 수 있도록 설계하였습니다.
+
+<!-- 이 프로젝트는 3명이서 협업 하여 진행 하였습니다. 저는 넥슨 API 연동 및 기능 구현을 주로 담당하였습니다. <br> 넥슨 API를 활용하여 메이플스토리 게임의 캐릭터를 검색하고, 해당 캐릭터에 대한 다양한 정보를 제공하는 검색 및 가이드 기능을 구현한 시스템입니다.<br> 사용자는 자신의 게임 캐릭터를 쉽게 검색하여 레벨, 직업, 아이템 정보 등 다양한 정보를 확인할 수 있습니다.<br> 또한 게임 내의 컨텐츠 추천 및 가이드를 제공하여, 플레이어가 보다 효율적으로 게임을 즐길 수 있도록 도와주도록 설계 하였습니다.  -->
 
 # 메인 기능
 
@@ -39,11 +42,21 @@ tags: [overview, Servlet]
 - Eclipse – Java 백엔드 및 서블릿 개발 환경
 - Visual Studio Code (VS Code) – 정적 페이지(HTML, CSS, JS) 편집
 
-# Blockquote
+# 컨트롤러 핵심 기능
 
-The following is a blockquote:
-
-> Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.
+### usercontroller
+<button class="accordion">UserController</button>
+<div class="panel">
+    <pre><code>
+public class UserController {
+    // 사용자 관련 API 처리
+    @GetMapping("/user/{id}")
+    public User getUser(@PathVariable Long id) {
+        return userService.findById(id);
+    }
+}
+    </code></pre>
+</div>
 
 # Thematic breaks (<hr>)
 
