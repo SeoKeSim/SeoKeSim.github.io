@@ -10,7 +10,7 @@ navbar_entries:
 
 project_entries:
   - title: 서블릿 프로젝트
-    url: servlet_post
+    url: servlet-post
     desc: 넥슨 API를 활용 하여, 메이플 스토리 게임의 캐릭터 검색 및 가이드 기능 제작
 
   - title: 졸업 작품 팀프로젝트
